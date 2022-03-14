@@ -3,14 +3,18 @@ import RenderBooks from './RenderBooks'
 
 const BookContainer = () => {
 
+  // useEffect here
   const myBooks = () => {
     fetch("http://localhost:3001/books")
     .then((res) => res.json())
-    .then((book) => {
-         <h1>{book}</h1>
+    .then((books) => {
+         console.log(books)
     } 
   )   
 }  
+
+// put map here and state for each book
+
   return (
     <div>
         <RenderBooks myBooks={myBooks} />
@@ -19,3 +23,9 @@ const BookContainer = () => {
 }
 
 export default BookContainer
+
+// return (
+//   <div>
+//     {bookList}
+//  </div>
+// )

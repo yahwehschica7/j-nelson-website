@@ -1,22 +1,19 @@
 import React from 'react'
 
-const RenderBooks = () => {
+const RenderBooks = ({myBooks}) => {
 
-  const myBooks = () => {
-        fetch("http://localhost:3001/books")
-        .then((res) => res.json())
-        .then((book) => {
-             book.map((eachBook) => {
-            <h1>{eachBook.title}</h1>
-            
-             
-           }
-        )} 
-      )   
-    }
+
+  const bookList = () => {
+    myBooks.map((book) => {
+    console.log(book)
+    // <h1>{book.title}</h1>,
+    // <img src={book.cover} />
+  })}
 
   return (
-    <div>{myBooks}</div>
+    <div>
+      {bookList}
+   </div>
   )
 }
 
