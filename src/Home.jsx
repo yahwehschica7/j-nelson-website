@@ -12,8 +12,6 @@ const Home = () => {
       })
     }
 
-  
-
   return (
     <div>
         <p>
@@ -22,7 +20,7 @@ const Home = () => {
         without ever gaining a pound or emptying her wallet. 
         She also inhales books, one delicious breath at a time. :-)
         </p>
-        <h1>{displayCurrentBook}</h1>
+        <h1></h1>
       
     </div>
   )
