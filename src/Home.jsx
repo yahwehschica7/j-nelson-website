@@ -3,10 +3,20 @@ import About from './About';
 
 const Home = () => {
 
+  function displayCurrentBook() {
+    
+      fetch("http://localhost:3001/books")
+      .then(res => res.json())
+      .then(data => {
+        data.map((data) => data.title)
+      })
+    }
+
   
+
   return (
     <div>
-      <About />
+      <About displayCurrentBook={displayCurrentBook} />
       
     </div>
   )
