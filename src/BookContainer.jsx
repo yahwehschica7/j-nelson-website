@@ -10,22 +10,22 @@ const BookContainer = () => {
     fetch("http://localhost:3001/books")
     .then((res) => res.json())
     .then((data) => {
-        data.map((book) => {
-          console.log(book)
+          console.log(data)
+          setBooks(data)
         }
-        
       )
-         
-    } 
-  )   
-  
-}, [])  
+    }, [])   
+     
+   const bookList = books.map((book) => 
+    book.title 
+   )
 
 // put map here and state for each book
 
   return (
     <div>
-        <h1>Books</h1> 
+       <h1>{bookList}</h1>
+        
     </div>
   )
 }
