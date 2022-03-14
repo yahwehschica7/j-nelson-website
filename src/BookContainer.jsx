@@ -1,31 +1,33 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 
 const BookContainer = () => {
 
+  const [books, setBooks] = useState([])
+
   // useEffect here
-  const myBooks = () => {
+  useEffect(() => {
     fetch("http://localhost:3001/books")
     .then((res) => res.json())
-    .then((books) => {
-         console.log(books)
+    .then((data) => {
+        data.map((book) => {
+          console.log(book)
+        }
+        
+      )
+         
     } 
   )   
-}  
+  
+}, [])  
 
 // put map here and state for each book
 
   return (
     <div>
-        <RenderBooks myBooks={myBooks} />
+        <h1>Books</h1> 
     </div>
   )
 }
 
 export default BookContainer
-
-// return (
-//   <div>
-//     {bookList}
-//  </div>
-// )

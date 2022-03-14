@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Home = ({myBooks}) => {
+const Home = () => {
 
   
 
@@ -14,7 +14,7 @@ const Home = ({myBooks}) => {
           without ever gaining a pound or emptying her wallet. 
           She also inhales books, one delicious breath at a time. 😊
           </p>
-          {myBooks}
+          
           
 
           
