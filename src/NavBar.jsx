@@ -17,21 +17,18 @@ function NavBar() {
       <h1 style={{backgroundColor: "darkturquoise"}}>Jessica Nelson</h1>
       <NavLink
         to="/"
-        exact
         style={linkStyles}
       >
         Home
       </NavLink>
       <NavLink
         to="/books"
-        exact
         style={linkStyles}
       >
         Books
       </NavLink>
       <NavLink
         to="/resources"
-        exact
         style={linkStyles}
       >
        Writer Resources
