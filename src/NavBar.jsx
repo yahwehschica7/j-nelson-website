@@ -14,7 +14,7 @@ const linkStyles = {
 function NavBar() {
   return (
     <div>
-      <h1 style={{backgroundColor: "darkturquoise"}}>Jessica Nelson</h1>
+      <h1 style={{backgroundColor: "antiquewhite"}} font={{font: "bold"}}>Jessica Nelson</h1>
       <NavLink
         to="/"
         style={linkStyles}
