@@ -5,8 +5,7 @@ const BookContainer = () => {
 
   const [books, setBooks] = useState([])
 
-  // useEffect here
-  useEffect(() => {
+   useEffect(() => {
     fetch("http://localhost:3001/books")
     .then((res) => res.json())
     .then((data) => {
@@ -16,8 +15,11 @@ const BookContainer = () => {
       )
     }, [])   
      
-   const bookList = books.map((book) => 
-    book.title 
+   const bookList = books.map(book => 
+    <p> {book.title} 
+      <button onClick={book.link}>Buy Now</button>
+      <img src={book.cover}/>
+    </p>
    )
 
 // put map here and state for each book
