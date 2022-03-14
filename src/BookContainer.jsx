@@ -13,16 +13,19 @@ const BookContainer = () => {
           setBooks(data)
         }
       )
-    }, [])   
+    }, []) 
+    
+  
      
    const bookList = books.map(book => 
-    <p> {book.title} 
-      <button onClick={book.link}>Buy Now</button>
-      <img src={book.cover}/>
+    <p> 
+        {book.title}
+        <img src={book.cover}/>
+        <a href={book.link}>
+        <button>Buy Now</button>
+        </a>
     </p>
    )
-
-// put map here and state for each book
 
   return (
     <div>
