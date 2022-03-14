@@ -16,10 +16,12 @@ function App() {
               exact path="/" 
               element={<Home />}>
               </Route>
-              <Route path="/books"
+              <Route 
+              exact path="/books"
               element={<BookContainer />}
               ></Route>
-              <Route path="/resources"
+              <Route 
+              exact path="/resources"
               element={<WriterResources />}
               ></Route>
             </Routes>

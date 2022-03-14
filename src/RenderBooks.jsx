@@ -7,7 +7,8 @@ const RenderBooks = () => {
         .then((res) => res.json())
         .then((book) => {
              book.map((eachBook) => {
-             console.log(eachBook.title)
+            <h1>{eachBook.title}</h1>
+            
              
            }
         )} 
@@ -15,8 +16,10 @@ const RenderBooks = () => {
     }
 
   return (
-    <div>{myBooks()}</div>
+    <div>{myBooks}</div>
   )
 }
 
 export default RenderBooks
+
+{/* <img src={window.location.origin + '/img/myImage.png'} /> */}
