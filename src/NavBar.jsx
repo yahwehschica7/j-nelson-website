@@ -3,25 +3,22 @@ import { NavLink } from 'react-router-dom';
 
 const linkStyles = {
   display: "inline-block",
-  width: "50px",
+  width: "150px",
   padding: "12px",
   margin: "0 6px 6px",
-  background: "blue",
+  background: "lightpink",
   textDecoration: "none",
-  color: "white",
+  color: "black",
 };
 
-/* define the NavBar component */
 function NavBar() {
   return (
     <div>
+      <h1 style={{backgroundColor: "burlywood"}}>Welcome to Jessica Nelson's Website</h1>
       <NavLink
         to="/"
-        /* set exact so it knows to only set activeStyle when route is deeply equal to link */
         exact
-        /* add styling to Navlink */
         style={linkStyles}
-        /* add prop for activeStyle */
         activeStyle={{
           background: "darkblue",
         }}
@@ -52,16 +49,6 @@ function NavBar() {
   );
 }
 
-// const NavBar = () => {
-//   return (
-//     <div>
-//       <h1>Welcome to Jessica Nelson's Website</h1>
-//         <h2>All Book Lovers Welcome</h2>
-//         <button>Home</button>
-//         <button>Books</button>
-//         <button>Writer Resources</button>
-//     </div>
-//   )
-// }
+
 
 export default NavBar   
