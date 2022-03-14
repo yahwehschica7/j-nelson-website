@@ -19,8 +19,8 @@ const BookContainer = () => {
      
    const bookList = books.map(book => 
     <p> 
-        {book.title}
         <img src={book.cover}/>
+        <h4>{book.title}</h4>
         <a href={book.link}>
         <button>Buy Now</button>
         </a>
@@ -29,8 +29,7 @@ const BookContainer = () => {
 
   return (
     <div>
-       <h1>{bookList}</h1>
-        
+       {bookList}
     </div>
   )
 }
