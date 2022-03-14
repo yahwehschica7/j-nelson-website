@@ -14,14 +14,11 @@ const linkStyles = {
 function NavBar() {
   return (
     <div>
-      <h1 style={{backgroundColor: "burlywood"}}>Welcome to Jessica Nelson's Website</h1>
+      <h1 style={{backgroundColor: "darkturquoise"}}>Jessica Nelson</h1>
       <NavLink
         to="/"
         exact
         style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
       >
         Home
       </NavLink>
@@ -29,9 +26,6 @@ function NavBar() {
         to="/books"
         exact
         style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
       >
         Books
       </NavLink>
@@ -39,9 +33,6 @@ function NavBar() {
         to="/resources"
         exact
         style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
       >
        Writer Resources
       </NavLink>
