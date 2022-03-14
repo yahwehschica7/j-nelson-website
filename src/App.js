@@ -20,8 +20,8 @@ function App() {
               element={<BookContainer />}
               ></Route>
               <Route path="/resources"
-            element={<WriterResources />}
-            ></Route>
+              element={<WriterResources />}
+              ></Route>
             </Routes>
         </Router>
     </div>

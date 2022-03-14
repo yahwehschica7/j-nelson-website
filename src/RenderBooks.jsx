@@ -6,8 +6,12 @@ const RenderBooks = () => {
         fetch("http://localhost:3001/books")
         .then((res) => res.json())
         .then((book) => {
-             book.map((eachBook) => eachBook.title)
-        })    
+             book.map((eachBook) => {
+             console.log(eachBook.title)
+             
+           }
+        )} 
+      )   
     }
 
   return (
