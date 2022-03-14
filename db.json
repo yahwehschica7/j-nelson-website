@@ -1,0 +1,55 @@
+
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "Love on the Range",
+        "cover": "https://books.google.com/books/content?id=-HmGIvhuHr0C&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U01PHSoDr4oxJikcr9A_wVvLWL11Q&w=1280",
+        "link": "https://www.harlequin.com/shop/books/9780373829149_love-on-the-range.html"
+      },
+      {
+        "id": 2,
+        "title": "Family on the Range",
+        "cover": "https://i.harperapps.com/hqna/covers/9781460333839/y404.jpg",
+        "link": "https://www.harlequin.com/shop/books/9781460333839_family-on-the-range.html"
+      },
+      {
+        "id": 3,
+        "title": "The Matchmaker's Match",
+        "cover": "https://i.harperapps.com/hqna/covers/9781460388921/y404.jpg",
+        "link":"https://www.harlequin.com/shop/books/9781460388921_the-matchmakers-match.html"
+      },
+      {
+        "id": 4,
+        "title": "A Hasty Betrothal",
+        "cover": "https://i.harperapps.com/hqna/covers/9781488007996/y404.jpg",
+        "link":"https://www.harlequin.com/shop/books/9781488007996_a-hasty-betrothal.html" 
+      },
+      {
+        "id": 5,
+        "title": "The Unconventional Governess",
+        "cover": "https://i.harperapps.com/hqna/covers/9781488087325/y404.jpg",
+        "link":"https://www.harlequin.com/shop/books/9781488087325_the-unconventional-governess.html" 
+      },
+      {
+        "id": 6,
+        "title": "An Unlikely Duchess",
+        "cover": "https://i.harperapps.com/hqna/covers/9780369706683/y404.jpg",
+        "link": "https://www.harlequin.com/shop/books/9780369706683_an-unlikely-duchess.html" 
+
+      }
+    ],
+    "resources": [
+        {"id": 1,
+        "link": "",
+        "name": ""  
+        },
+        {
+        "id": 2, 
+        "link": "",
+        "name": ""
+        }
+    ]
+
+    
+  }
