@@ -23,10 +23,11 @@ const WriterResources = () => {
   )
   return (
     <div>
-      {resourceList}
-      <h1>Do you want to learn more about publishing? 
+      
+      <h2>Do you want to learn more about publishing? 
         Check out these amazing resources to learn more!
-      </h1>
+      </h2>
+        {resourceList}
         <AddWritingTips />
     </div>
   )

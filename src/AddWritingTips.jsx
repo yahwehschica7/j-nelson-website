@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 
 const AddWritingTips = () => {
 
-  const [advice, newAdvice] = useState("")
+  const [advice, setNewAdvice] = useState([])
  
-  const adviceList = advice.map((advice) => 
-    <li key={advice.id}>
-      <h2>{advice.writingTip}</h2>
-    </li>
-  )
+
+  useEffect(() => {
+    fetch("http://localhost:3001/resources")
+    .then(res => res.json())
+    .then((data) => {
+      console.log(data)
+    })
+  }, [])
 
   function handleChange(e) {
     e.preventDefault()
@@ -25,11 +28,17 @@ const AddWritingTips = () => {
   })
   .then(response => response.json())
   .then(data => {
-    newAdvice(data);
+    setNewAdvice(data);
   })
   }
 
- 
+  const adviceList = advice.map((tip) => 
+  <li key={tip.id}>
+    <h2>{tip.writingTip}</h2>
+  </li>
+)
+
+console.log(adviceList)
     
   return (
     <div>
