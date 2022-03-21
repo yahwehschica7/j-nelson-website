@@ -9,9 +9,15 @@ const AddWritingTips = () => {
     fetch("http://localhost:3001/resources")
     .then(res => res.json())
     .then((data) => {
-      console.log(data)
+      setNewAdvice(data)
     })
   }, [])
+
+  const adviceList = advice.map((tip) => 
+  <li key={tip.id}>
+    <h2>{tip.writingTip}</h2>
+  </li>
+)
 
   function handleChange(e) {
     e.preventDefault()
@@ -28,17 +34,10 @@ const AddWritingTips = () => {
   })
   .then(response => response.json())
   .then(data => {
-    setNewAdvice(data);
+    setNewAdvice(...advice, data);
   })
   }
 
-  const adviceList = advice.map((tip) => 
-  <li key={tip.id}>
-    <h2>{tip.writingTip}</h2>
-  </li>
-)
-
-console.log(adviceList)
     
   return (
     <div>
