@@ -6,7 +6,7 @@ const AddWritingTips = () => {
  
 
   useEffect(() => {
-    fetch("http://localhost:3001/resources")
+    fetch("http://localhost:3001/advice")
     .then(res => res.json())
     .then((data) => {
       setNewAdvice(data)
