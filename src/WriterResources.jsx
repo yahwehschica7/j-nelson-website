@@ -26,9 +26,13 @@ const WriterResources = () => {
       
       <h2>Do you want to learn more about publishing? 
         Check out these amazing resources to learn more!
-      </h2>
         {resourceList}
+      </h2>
+        <h3>Writing advice:
         <AddWritingTips />
+        </h3>
+        
+        
     </div>
   )
 }
