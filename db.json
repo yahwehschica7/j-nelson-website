@@ -1,55 +1,84 @@
-
 {
-    "books": [
-      {
-        "id": 1,
-        "title": "Love on the Range",
-        "cover": "https://i.harperapps.com/hqna/covers/9781459226593/y404.jpg",
-        "link": "https://www.harlequin.com/shop/books/9780373829149_love-on-the-range.html"
-      },
-      {
-        "id": 2,
-        "title": "Family on the Range",
-        "cover": "https://i.harperapps.com/hqna/covers/9781460333839/y404.jpg",
-        "link": "https://www.harlequin.com/shop/books/9781460333839_family-on-the-range.html"
-      },
-      {
-        "id": 3,
-        "title": "The Matchmaker's Match",
-        "cover": "https://i.harperapps.com/hqna/covers/9781460388921/y404.jpg",
-        "link":"https://www.harlequin.com/shop/books/9781460388921_the-matchmakers-match.html"
-      },
-      {
-        "id": 4,
-        "title": "A Hasty Betrothal",
-        "cover": "https://i.harperapps.com/hqna/covers/9781488007996/y404.jpg",
-        "link":"https://www.harlequin.com/shop/books/9781488007996_a-hasty-betrothal.html" 
-      },
-      {
-        "id": 5,
-        "title": "The Unconventional Governess",
-        "cover": "https://i.harperapps.com/hqna/covers/9781488087325/y404.jpg",
-        "link":"https://www.harlequin.com/shop/books/9781488087325_the-unconventional-governess.html" 
-      },
-      {
-        "id": 6,
-        "title": "An Unlikely Duchess",
-        "cover": "https://i.harperapps.com/hqna/covers/9780369706683/y404.jpg",
-        "link": "https://www.harlequin.com/shop/books/9780369706683_an-unlikely-duchess.html" 
-
-      }
-    ],
-    "resources": [
-        {"id": 1,
-        "link": "",
-        "name": ""  
-        },
-        {
-        "id": 2, 
-        "link": "",
-        "name": ""
-        }
-    ]
-
-    
-  }
+  "books": [
+    {
+      "id": 1,
+      "title": "Love on the Range",
+      "cover": "https://i.harperapps.com/hqna/covers/9781459226593/y404.jpg",
+      "link": "https://www.harlequin.com/shop/books/9780373829149_love-on-the-range.html"
+    },
+    {
+      "id": 2,
+      "title": "Family on the Range",
+      "cover": "https://i.harperapps.com/hqna/covers/9781460333839/y404.jpg",
+      "link": "https://www.harlequin.com/shop/books/9781460333839_family-on-the-range.html"
+    },
+    {
+      "id": 3,
+      "title": "The Matchmaker's Match",
+      "cover": "https://i.harperapps.com/hqna/covers/9781460388921/y404.jpg",
+      "link": "https://www.harlequin.com/shop/books/9781460388921_the-matchmakers-match.html"
+    },
+    {
+      "id": 4,
+      "title": "A Hasty Betrothal",
+      "cover": "https://i.harperapps.com/hqna/covers/9781488007996/y404.jpg",
+      "link": "https://www.harlequin.com/shop/books/9781488007996_a-hasty-betrothal.html"
+    },
+    {
+      "id": 5,
+      "title": "The Unconventional Governess",
+      "cover": "https://i.harperapps.com/hqna/covers/9781488087325/y404.jpg",
+      "link": "https://www.harlequin.com/shop/books/9781488087325_the-unconventional-governess.html"
+    },
+    {
+      "id": 6,
+      "title": "An Unlikely Duchess",
+      "cover": "https://i.harperapps.com/hqna/covers/9780369706683/y404.jpg",
+      "link": "https://www.harlequin.com/shop/books/9780369706683_an-unlikely-duchess.html"
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "link": "https://rachellegardner.com/",
+      "name": "Agent Rachelle Gardner"
+    },
+    {
+      "id": 2,
+      "link": "https://stevelaube.com/",
+      "name": "Agent Steve Laube"
+    }
+  ],
+  "socialmedia": [
+    {
+      "id": 1,
+      "name": "Instagram",
+      "url": "https://www.instagram.com/jessica_nelson7/"
+    },
+    {
+      "id": 2,
+      "name": "Facebook",
+      "url": "https://www.facebook.com/AuthorJessicaNelson/"
+    },
+    {
+      "id": 3,
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jessica-nelson-729762217"
+    }
+  ],
+  "advice": [
+    {
+      "id": 1,
+      "writingTip": "Never give up!"
+    },
+    {
+      "id": 2,
+      "writingTip": "Do your research"
+    },
+    {
+      "id": 3,
+      "writingTip": "Be open to critique"
+    }
+  
+  ]
+}

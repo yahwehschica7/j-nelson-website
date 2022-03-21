@@ -9,8 +9,7 @@ const BookContainer = () => {
     fetch("http://localhost:3001/books")
     .then((res) => res.json())
     .then((data) => {
-          console.log(data)
-          setBooks(data)
+         setBooks(data)
         }
       )
     }, []) 
@@ -18,13 +17,13 @@ const BookContainer = () => {
   
      
    const bookList = books.map(book => 
-    <p> 
+    <ul key={book.id}> 
         <img src={book.cover}/>
         <h4>{book.title}</h4>
         <a href={book.link}>
-        <button>Buy Now</button>
+        <button style={{backgroundColor: "orchid"}}>Buy Now</button>
         </a>
-    </p>
+    </ul>
    )
 
   return (

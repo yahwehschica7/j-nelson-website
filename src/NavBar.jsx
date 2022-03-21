@@ -6,7 +6,7 @@ const linkStyles = {
   width: "150px",
   padding: "12px",
   margin: "0 6px 6px",
-  background: "lightpink",
+  background: "orchid",
   textDecoration: "none",
   color: "black",
 };
@@ -14,7 +14,7 @@ const linkStyles = {
 function NavBar() {
   return (
     <div>
-      <h1 style={{backgroundColor: "antiquewhite"}} font={{font: "bold"}}>Jessica Nelson</h1>
+      <h1 style={{backgroundColor: "lightgrey"}}>Jessica Nelson</h1>
       <NavLink
         to="/"
         style={linkStyles}
