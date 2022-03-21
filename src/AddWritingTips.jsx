@@ -14,9 +14,9 @@ const AddWritingTips = () => {
   }, [])
 
   const adviceList = advice.map((tip) => 
-  <li key={tip.id}>
+  <p key={tip.id}>
     <h4>{tip.writingTip}</h4>
-  </li>
+  </p>
 )
 
   function handleChange(e) {
