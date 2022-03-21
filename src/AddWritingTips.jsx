@@ -30,7 +30,7 @@ const AddWritingTips = () => {
     headers: {
       'Content-Type': 'application/json',
   },
-    body: JSON.stringify(advice),
+    body: JSON.stringify(handleChange),
   })
   .then(response => response.json())
   .then(data => {
