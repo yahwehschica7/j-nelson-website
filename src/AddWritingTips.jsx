@@ -34,7 +34,7 @@ const AddWritingTips = () => {
   })
   .then(response => response.json())
   .then(data => {
-    setNewAdvice(...advice, data);
+    console.log(...advice, data);
   })
   }
 
