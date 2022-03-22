@@ -21,6 +21,7 @@ const WriterResources = () => {
       </a>
     </ul>
   )
+  
   return (
     <div>
       
@@ -30,9 +31,7 @@ const WriterResources = () => {
       </h2>
         
         <AddWritingTips />
-        
-        
-        
+            
     </div>
   )
 }

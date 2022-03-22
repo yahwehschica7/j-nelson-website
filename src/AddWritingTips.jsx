@@ -21,7 +21,7 @@ const AddWritingTips = () => {
 
   function handleChange(e) {
     e.preventDefault()
-    handleAdd(e.target.value)
+    setNewAdvice(...advice, e.target.value)
   }
 
   function handleAdd() {
@@ -34,7 +34,7 @@ const AddWritingTips = () => {
   })
   .then(response => response.json())
   .then(data => {
-    setNewAdvice(...advice, data);
+    console.log(data)
   })
   }
 
