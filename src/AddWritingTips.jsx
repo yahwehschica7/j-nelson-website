@@ -43,7 +43,8 @@ const AddWritingTips = () => {
     <div>
       
        <h2>Have your own great writing advice? Add it here!</h2>
-        <input type="text" value={"Add advice below"} onChange={handleChange} />
+        
+        <input type="text" value={"Add Your Advice"} onChange={handleChange} />
 
         {adviceList}
           <button type="button" onClick={handleAdd}>

@@ -28,9 +28,9 @@ const WriterResources = () => {
         Check out these amazing resources to learn more!
         {resourceList}
       </h2>
-        <h3>Writing advice:
+        
         <AddWritingTips />
-        </h3>
+        
         
         
     </div>
