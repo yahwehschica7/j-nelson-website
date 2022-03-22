@@ -43,10 +43,9 @@ const AddWritingTips = () => {
   return (
     <div>
        <h2>Have your own great writing advice? Add it here!</h2>
-        <form>
+        <form onSubmit={handleAdd}>
           <input type="text" value="" onChange={handleChange} />
-            
-
+          <input type="submit" />
         </form>
           
 
