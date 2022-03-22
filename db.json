@@ -78,20 +78,6 @@
     {
       "id": 3,
       "writingTip": "Be open to critique"
-    },
-    [
-      {
-        "id": 1,
-        "writingTip": "Never give up!"
-      },
-      {
-        "id": 2,
-        "writingTip": "Do your research"
-      },
-      {
-        "id": 3,
-        "writingTip": "Be open to critique"
-      }
-    ]
+    }
   ]
 }

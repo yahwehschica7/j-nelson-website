@@ -13,24 +13,20 @@ const AddWritingTips = () => {
     })
   }, [])
 
-  const adviceList = advice.map((tip) => 
-  <p key={tip.id}>
-    {tip.writingTip}
-  </p>
-)
-
+  
   function handleChange(e) {
-    e.preventDefault()
-    setNewAdvice(...advice, e.target.value)
+   console.log(e.target.value)
   }
 
-  function handleAdd() {
+  function handleAdd(e) {
+    e.preventDefault()
+    
     fetch("http://localhost:3001/advice", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
   },
-    body: JSON.stringify(handleChange),
+    body: JSON.stringify(),
   })
   .then(response => response.json())
   .then(data => {
@@ -38,18 +34,23 @@ const AddWritingTips = () => {
   })
   }
 
-    
+  const adviceList = advice.map((tip) => 
+  <p key={tip.id}>
+    {tip.writingTip}
+  </p>
+)
+
   return (
     <div>
-      
        <h2>Have your own great writing advice? Add it here!</h2>
-        
-        <input type="text" value={"Add Your Advice"} onChange={handleChange} />
+        <form>
+          <input type="text" value="" onChange={handleChange} />
+            
 
-        {adviceList}
-          <button type="button" onClick={handleAdd}>
-            Add
-          </button>
+        </form>
+          
+
+          {adviceList}
     </div>
   )
 }
