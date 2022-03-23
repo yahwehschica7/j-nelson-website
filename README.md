@@ -1,39 +1,29 @@
-# Getting Started with Create React App
+# Getting Started with Jessica Nelson's Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [Create React App](https://https://create-react-app.dev/).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `Start server`
 
-### `npm test`
+Type json-server -p 3001 --watch db.json in the terminal to start the json server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Navigating the app`
 
-### `npm run build`
+This site uses the hooks useEffect and useState. It also uses BrowserRouter as Router from react-router-dom and uses three routes to navigate to various components. NavLink is also imported from react-router-dom.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Components`
+There are five components:
+Home: introduces user to author and imports the Links component so that users can find the author on social media
+NavBar: this component titles the page and uses NavLink
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
