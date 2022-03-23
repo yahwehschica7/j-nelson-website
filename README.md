@@ -24,3 +24,5 @@ BookContainer: this component uses fetch within a useEffect to obtain the author
 WriterResources: this component uses fetch within a useEffect to display writer resources. It imports AddWritingTips for user interaction with page.\
 AddWritingTips: a controlled form that uses state and useEffect within a fetch to allow users to add writing advice to the page.
 
+### `Description`
+This website is intended to allow readers to know about and buy books written by Jessica Nelson. They can also join her on social media, if the user so wishes.
