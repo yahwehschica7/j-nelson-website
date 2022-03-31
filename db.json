@@ -90,6 +90,14 @@
     {
       "writingTip": "Exclamation points are not your friend!",
       "id": 6
+    },
+    {
+      "writingTip": "Write with your heart!",
+      "id": 7
+    },
+    {
+      "writingTip": "Find Your Voice",
+      "id": 8
     }
   ]
 }

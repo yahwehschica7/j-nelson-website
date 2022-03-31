@@ -22,18 +22,18 @@ const AddWritingTips = () => {
     e.preventDefault()
 
     fetch("http://localhost:3001/advice", {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-  },
-    body: JSON.stringify({
-      writingTip: adviceInput
-    }),
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+    },
+      body: JSON.stringify({
+        writingTip: adviceInput
+      }),
   })
-  .then(response => response.json())
-  .then(data => {
-    setNewAdvice([...advice, data])
-    setAdviceInput("")
+    .then(response => response.json())
+    .then(data => {
+      setNewAdvice([...advice, data])
+      setAdviceInput("")
   }) 
   }
 

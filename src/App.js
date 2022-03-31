@@ -5,6 +5,7 @@ import Home from "./Home";
 import BookContainer from "./BookContainer";
 import WriterResources from "./WriterResources";
 import './App.css';
+import Counter from "./Counter";
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
               exact path="/resources"
               element={<WriterResources />}
               ></Route>
+              <Route exact path="/counter"
+              element={<Counter />}
+              ></Route> 
             </Routes>
         </Router>
     </div>

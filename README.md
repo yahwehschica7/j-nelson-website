@@ -17,12 +17,13 @@ This site uses the hooks useEffect and useState. It also uses BrowserRouter as R
 index.css file. 
 
 ### `Components`
-There are six unique components:\
+There are seven unique components:\
 Home: introduces user to author and imports the Links component so that users can find the author on social media. \
 NavBar: this component titles the page and uses the NavLink router to route the user to Home, Books, or Writer's Resources.\
 BookContainer: this component uses fetch within a useEffect to obtain the author's book information and display it on the page.\
 WriterResources: this component uses fetch within a useEffect to display writer resources. It imports AddWritingTips for user interaction with page.\
-AddWritingTips: a controlled form that uses state and useEffect within a fetch to allow users to add writing advice to the page.
+AddWritingTips: a controlled form that uses state and useEffect within a fetch to allow users to add writing advice to the page.\
+Counter: a coding test designed to test knowledge of useState
 
 ### `Description`
 This website is intended to allow readers to know about and buy books written by Jessica Nelson. They can also join her on social media, if the users so wish.
